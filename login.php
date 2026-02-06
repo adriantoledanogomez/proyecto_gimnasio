@@ -1,6 +1,6 @@
 <?php
-include 'includes/conexion.php';
-include 'includes/auth.php';
+require_once __DIR__ . '/includes/conexion.php';
+require_once __DIR__ . '/includes/auth.php';
 
 if (isset($_SESSION['usuario_id'])) {
     header('Location: index.php');

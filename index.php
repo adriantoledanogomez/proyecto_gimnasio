@@ -1,7 +1,7 @@
 <?php
-include 'includes/conexion.php';
-include 'includes/auth.php';
-include 'includes/layout.php';
+require_once __DIR__ . '/includes/conexion.php';
+require_once __DIR__ . '/includes/auth.php';
+require_once __DIR__ . '/includes/layout.php';
 requiereLogin();
 
 $totalIncidentes = (int)(mysqli_fetch_assoc(mysqli_query($conexion, "SELECT COUNT(*) total FROM incidentes"))['total'] ?? 0);

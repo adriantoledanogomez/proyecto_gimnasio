@@ -1,7 +1,7 @@
 <?php
-include 'includes/conexion.php';
-include 'includes/auth.php';
-include 'includes/layout.php';
+require_once __DIR__ . '/includes/conexion.php';
+require_once __DIR__ . '/includes/auth.php';
+require_once __DIR__ . '/includes/layout.php';
 requiereLogin();
 
 if (isset($_POST['guardar'])) {
