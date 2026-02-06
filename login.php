@@ -33,23 +33,24 @@ if (isset($_POST['acceder'])) {
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Login SOC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | SOC Manager</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 <div class="container login-wrapper">
     <div class="card login-card">
-        <h1>Acceso SOC</h1>
-        <p>Inicia sesión para gestionar incidencias de ciberseguridad.</p>
+        <h1>SOC Manager</h1>
+        <p class="muted">Panel profesional de gestión de incidencias para pequeñas empresas.</p>
         <?php if ($error): ?>
             <div class="alerta-error"><?php echo $error; ?></div>
         <?php endif; ?>
         <form method="POST">
             <input type="text" name="usuario" placeholder="Usuario" required>
             <input type="password" name="password" placeholder="Contraseña" required>
-            <input type="submit" name="acceder" value="Entrar">
+            <input type="submit" name="acceder" value="Entrar al panel">
         </form>
-        <small>Usuario demo: <strong>admin</strong> / Password: <strong>admin123</strong></small>
+        <small>Demo: <strong>admin</strong> / <strong>admin123</strong></small>
     </div>
 </div>
 </body>
